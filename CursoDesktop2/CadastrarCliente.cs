@@ -24,6 +24,13 @@ namespace CursoDesktop2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FormInserirCliente frlt = new FormInserirCliente();
+            frlt.MdiParent = this.MdiParent;
+            frlt.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
