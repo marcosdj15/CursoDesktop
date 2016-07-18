@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.gbCliente = new System.Windows.Forms.GroupBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.tbCodigo = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.lblIdade = new System.Windows.Forms.Label();
-            this.NuIdade = new System.Windows.Forms.NumericUpDown();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.rbMasculino = new System.Windows.Forms.RadioButton();
-            this.rbFeminino = new System.Windows.Forms.RadioButton();
-            this.lblEndereco = new System.Windows.Forms.Label();
             this.tbEndereco = new System.Windows.Forms.TextBox();
+            this.lblEndereco = new System.Windows.Forms.Label();
+            this.gbSexo = new System.Windows.Forms.GroupBox();
+            this.rbFeminino = new System.Windows.Forms.RadioButton();
+            this.rbMasculino = new System.Windows.Forms.RadioButton();
+            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.NuIdade = new System.Windows.Forms.NumericUpDown();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.tbNome = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.tbCodigo = new System.Windows.Forms.TextBox();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.btLimpar = new System.Windows.Forms.Button();
             this.btInserir = new System.Windows.Forms.Button();
             this.gbCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NuIdade)).BeginInit();
             this.gbSexo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuIdade)).BeginInit();
             this.SuspendLayout();
             // 
             // gbCliente
@@ -69,72 +69,22 @@
             this.gbCliente.TabStop = false;
             this.gbCliente.Text = "Novo Cliente";
             // 
-            // lblCodigo
+            // tbEndereco
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(7, 20);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código";
+            this.tbEndereco.Location = new System.Drawing.Point(75, 232);
+            this.tbEndereco.Multiline = true;
+            this.tbEndereco.Name = "tbEndereco";
+            this.tbEndereco.Size = new System.Drawing.Size(668, 105);
+            this.tbEndereco.TabIndex = 10;
             // 
-            // tbCodigo
+            // lblEndereco
             // 
-            this.tbCodigo.Location = new System.Drawing.Point(80, 17);
-            this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(83, 20);
-            this.tbCodigo.TabIndex = 1;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(10, 49);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(35, 13);
-            this.lblNome.TabIndex = 2;
-            this.lblNome.Text = "Nome";
-            // 
-            // tbNome
-            // 
-            this.tbNome.Location = new System.Drawing.Point(80, 46);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(311, 20);
-            this.tbNome.TabIndex = 3;
-            // 
-            // lblIdade
-            // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.Location = new System.Drawing.Point(13, 81);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(34, 13);
-            this.lblIdade.TabIndex = 4;
-            this.lblIdade.Text = "Idade";
-            // 
-            // NuIdade
-            // 
-            this.NuIdade.Location = new System.Drawing.Point(80, 79);
-            this.NuIdade.Name = "NuIdade";
-            this.NuIdade.Size = new System.Drawing.Size(120, 20);
-            this.NuIdade.TabIndex = 5;
-            this.NuIdade.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(6, 110);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(49, 13);
-            this.lblTelefone.TabIndex = 6;
-            this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // mtbTelefone
-            // 
-            this.mtbTelefone.Location = new System.Drawing.Point(80, 110);
-            this.mtbTelefone.Mask = "(999) 000-0000";
-            this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
-            this.mtbTelefone.TabIndex = 7;
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Location = new System.Drawing.Point(16, 232);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(53, 13);
+            this.lblEndereco.TabIndex = 9;
+            this.lblEndereco.Text = "Endereço";
             // 
             // gbSexo
             // 
@@ -147,17 +97,6 @@
             this.gbSexo.TabStop = false;
             this.gbSexo.Text = "Sexo";
             // 
-            // rbMasculino
-            // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(6, 19);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rbMasculino.TabIndex = 0;
-            this.rbMasculino.TabStop = true;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseVisualStyleBackColor = true;
-            // 
             // rbFeminino
             // 
             this.rbFeminino.AutoSize = true;
@@ -169,22 +108,84 @@
             this.rbFeminino.Text = "Feminino";
             this.rbFeminino.UseVisualStyleBackColor = true;
             // 
-            // lblEndereco
+            // rbMasculino
             // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(16, 232);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(53, 13);
-            this.lblEndereco.TabIndex = 9;
-            this.lblEndereco.Text = "Endereço";
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.Location = new System.Drawing.Point(6, 19);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.TabIndex = 0;
+            this.rbMasculino.TabStop = true;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UseVisualStyleBackColor = true;
             // 
-            // tbEndereco
+            // mtbTelefone
             // 
-            this.tbEndereco.Location = new System.Drawing.Point(75, 232);
-            this.tbEndereco.Multiline = true;
-            this.tbEndereco.Name = "tbEndereco";
-            this.tbEndereco.Size = new System.Drawing.Size(668, 105);
-            this.tbEndereco.TabIndex = 10;
+            this.mtbTelefone.Location = new System.Drawing.Point(80, 110);
+            this.mtbTelefone.Mask = "(999) 000-0000";
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.mtbTelefone.TabIndex = 7;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Location = new System.Drawing.Point(6, 110);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(49, 13);
+            this.lblTelefone.TabIndex = 6;
+            this.lblTelefone.Text = "Telefone";
+            this.lblTelefone.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // NuIdade
+            // 
+            this.NuIdade.Location = new System.Drawing.Point(80, 79);
+            this.NuIdade.Name = "NuIdade";
+            this.NuIdade.Size = new System.Drawing.Size(120, 20);
+            this.NuIdade.TabIndex = 5;
+            this.NuIdade.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.Location = new System.Drawing.Point(13, 81);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(34, 13);
+            this.lblIdade.TabIndex = 4;
+            this.lblIdade.Text = "Idade";
+            // 
+            // tbNome
+            // 
+            this.tbNome.Location = new System.Drawing.Point(80, 46);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(311, 20);
+            this.tbNome.TabIndex = 3;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(10, 49);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 2;
+            this.lblNome.Text = "Nome";
+            // 
+            // tbCodigo
+            // 
+            this.tbCodigo.Location = new System.Drawing.Point(80, 17);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.ReadOnly = true;
+            this.tbCodigo.Size = new System.Drawing.Size(83, 20);
+            this.tbCodigo.TabIndex = 1;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(7, 20);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Código";
             // 
             // btLimpar
             // 
@@ -220,9 +221,9 @@
             this.Load += new System.EventHandler(this.FormInserirCliente_Load);
             this.gbCliente.ResumeLayout(false);
             this.gbCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NuIdade)).EndInit();
             this.gbSexo.ResumeLayout(false);
             this.gbSexo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuIdade)).EndInit();
             this.ResumeLayout(false);
 
         }
